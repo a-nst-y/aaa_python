@@ -31,12 +31,12 @@ class CountVectorizer:
         return self.feature_names
 
 
-if __name__ == "__main___":
+if __name__ == "__main__":
     some_text = [
         "Crock Pot Pasta Never boil pasta again",
         "Pasta Pomodoro Fresh ingredients Parmesan to taste",
     ]
     vectorizer = CountVectorizer()
-    count_matrix = vectorizer.fit_transform()
+    count_matrix = vectorizer.fit_transform(some_text)
     print(vectorizer.get_feature_names())
     print(count_matrix)
