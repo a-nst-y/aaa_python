@@ -1,7 +1,3 @@
-import numpy as np
-from collections import Counter
-
-
 class CountVectorizer:
 
     """Convert a collection of text"""
@@ -25,7 +21,7 @@ class CountVectorizer:
                 feature_count = sent.count(feature)
                 features_freq.append(feature_count)
             doc_matrix.append(features_freq)
-        return np.array(doc_matrix)
+        return doc_matrix
 
     def get_feature_names(self):
         return self.feature_names
