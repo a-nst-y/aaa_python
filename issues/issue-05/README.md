@@ -1,0 +1,1 @@
+$ python -m pytest -q issue-05.py --cov . --cov-report html

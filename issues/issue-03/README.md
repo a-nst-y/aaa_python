@@ -1,0 +1,1 @@
+$ python -m unittest -v issue-03.py 2> result.txt
